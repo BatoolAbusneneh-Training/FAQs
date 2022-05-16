@@ -22,6 +22,7 @@
 }
 .Q1 {
   float: left;
+  font-size: 1.3em;
 }
 .show {
   float: right;
@@ -50,6 +51,8 @@ hr {
   padding-bottom: 6%;
 }
 .Q2 {
+  font-size: 1.3em;
+
   /* padding-top: 5%; */
   /* padding-right: 30%; */
   float: left;
@@ -74,6 +77,8 @@ hr {
   padding-bottom: 6%;
 }
 .Q3 {
+  font-size: 1.3em;
+
   /* padding-top: 10%; */
   float: left;
 }
@@ -87,8 +92,8 @@ hr {
 }
 
 .answer3 {
-    padding-top: 7%;
-    color: rgb(133, 133, 133);
+  padding-top: 7%;
+  color: rgb(133, 133, 133);
 }
 
 /* Q4 */
@@ -97,6 +102,8 @@ hr {
   padding-bottom: 6%;
 }
 .Q4 {
+  font-size: 1.3em;
+
   /* padding-top: 15%; */
   float: left;
 }
@@ -110,8 +117,8 @@ hr {
 }
 
 .answer4 {
-    padding-top: 7%;
-    color: rgb(133, 133, 133);
+  padding-top: 7%;
+  color: rgb(133, 133, 133);
 }
 
 /* Q5 */
@@ -120,6 +127,8 @@ hr {
   padding-bottom: 6%;
 }
 .Q5 {
+  font-size: 1.3em;
+
   /* padding-top: 20%; */
   float: left;
 }
@@ -133,7 +142,7 @@ hr {
 }
 
 .answer5 {
-    padding-top: 7%;
+  padding-top: 7%;
   color: rgb(133, 133, 133);
 }
 
@@ -143,6 +152,8 @@ hr {
   padding-bottom: 6%;
 }
 .Q6 {
+  font-size: 1.3em;
+
   /* padding-top: 25%; */
   float: left;
 }
@@ -156,7 +167,7 @@ hr {
 }
 
 .answer6 {
-    padding-top: 7%;
+  padding-top: 7%;
   color: rgb(133, 133, 133);
 }
 
@@ -166,6 +177,8 @@ hr {
   padding-bottom: 6%;
 }
 .Q7 {
+  font-size: 1.3em;
+
   /* padding-top: 30%; */
   float: left;
 }
@@ -179,6 +192,6 @@ hr {
 }
 
 .answer7 {
-    padding-top: 7%;
+  padding-top: 7%;
   color: rgb(133, 133, 133);
 }
