@@ -1,0 +1,63 @@
+.logo {
+  float: left;
+  padding-left: 30px;
+}
+.navbar {
+  padding: 10px;
+}
+#navbar {
+  padding-top: 10px;
+}
+.homeLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.3em;
+  padding-right: 40px;
+  padding-left: 170px;
+}
+.orderLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.3em;
+  padding-right: 40px;
+}
+.leaderboardsLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.3em;
+  padding-right: 40px;
+}
+.marketplaceLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.3em;
+  padding-right: 40px;
+}
+.faqsLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.3em;
+}
+.loginLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.5em;
+  padding-right: 40px;
+  float: right;
+}
+#loginLink {
+  font-size: 0.7em;
+  font-family: Inter;
+  padding: 8px;
+  background-color: #f1ba19;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
