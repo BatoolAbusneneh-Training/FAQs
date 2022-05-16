@@ -1,0 +1,184 @@
+.frequently {
+  color: rgb(84, 122, 230);
+  padding-top: 30px;
+  font-family: Inter;
+}
+.feelFree {
+  color: rgb(145, 145, 145);
+  font-family: Inter;
+  transform: translate(0em, -1em);
+}
+.hr {
+  color: rgb(184, 178, 178);
+}
+.faqspage {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+/* Q1 */
+.div1 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q1 {
+  float: left;
+}
+.show {
+  float: right;
+  padding-top: 20px;
+}
+.hide {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer1 {
+  /* transform: translate(0em, 5em); */
+  color: rgb(133, 133, 133);
+  padding-top: 60px;
+}
+hr {
+  border: 1px solid rgba(180, 180, 180, 0.2);
+}
+.line2 {
+  width: 85%;
+  transform: translate(4em, 0em);
+}
+/* Q2 */
+.div2 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q2 {
+  /* padding-top: 5%; */
+  /* padding-right: 30%; */
+  float: left;
+}
+.show2 {
+  float: right;
+  padding-top: 20px;
+}
+.hide2 {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer2 {
+  padding-top: 7%;
+  /* transform: translate(0em, 5em); */
+  color: rgb(133, 133, 133);
+}
+/* Q3 */
+.div3 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q3 {
+  /* padding-top: 10%; */
+  float: left;
+}
+.show3 {
+  float: right;
+  padding-top: 20px;
+}
+.hide3 {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer3 {
+    padding-top: 7%;
+    color: rgb(133, 133, 133);
+}
+
+/* Q4 */
+.div4 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q4 {
+  /* padding-top: 15%; */
+  float: left;
+}
+.show4 {
+  float: right;
+  padding-top: 20px;
+}
+.hide4 {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer4 {
+    padding-top: 7%;
+    color: rgb(133, 133, 133);
+}
+
+/* Q5 */
+.div5 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q5 {
+  /* padding-top: 20%; */
+  float: left;
+}
+.show5 {
+  float: right;
+  padding-top: 20px;
+}
+.hide5 {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer5 {
+    padding-top: 7%;
+  color: rgb(133, 133, 133);
+}
+
+/* Q6 */
+.div6 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q6 {
+  /* padding-top: 25%; */
+  float: left;
+}
+.show6 {
+  float: right;
+  padding-top: 20px;
+}
+.hide6 {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer6 {
+    padding-top: 7%;
+  color: rgb(133, 133, 133);
+}
+
+/* Q7 */
+.div7 {
+  padding-top: 0%;
+  padding-bottom: 6%;
+}
+.Q7 {
+  /* padding-top: 30%; */
+  float: left;
+}
+.show7 {
+  float: right;
+  padding-top: 20px;
+}
+.hide7 {
+  float: right;
+  padding-top: 20px;
+}
+
+.answer7 {
+    padding-top: 7%;
+  color: rgb(133, 133, 133);
+}
