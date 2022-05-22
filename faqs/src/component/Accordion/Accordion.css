@@ -1,42 +1,42 @@
 .accordion-button::after {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg") !important;
-  }
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg") !important;
-    transform: rotate(45deg) !important ;
-    background-color: white !important;
-  }
-  .accordion{
-border: 0px !important;
-width: 80% !important;
-margin: auto;
-  }
- .accordion-button {
-    Font-style: Bold !important;
-    Font-size: 18px !important;
-    Line-height: 22px !important;
-    Line-height: 120% !important;
-    vertical-align: Center !important;
-    color: #111827 !important;
-    background-color: white !important;
- }
-  .accordion-button:active {
-      border-color: white !important;
-      border-style: none;
-  }
-  .accordion-button:focus{
-    box-shadow:none;
-  }
-  .accordion-item{
-      border-right: 1px solid white !important;
-      border-left: 1px solid white !important;
-  }
-  .AccordionBody {
-    font-family: "Inter" !important;
-    font-size: 16px !important;
-    line-height: 22px !important;
-    align-items: left !important;
-    text-align: left;
-    color: rgba(60, 60, 67, 0.85);
-    padding: 2rem 3rem !important;
-  }
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg") !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg") !important;
+  transform: rotate(45deg) !important ;
+  background-color: white !important;
+}
+.accordion {
+  border: 0px !important;
+  width: 90% !important;
+  margin: auto;
+}
+.accordion-button {
+  font-style: Bold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  line-height: 120% !important;
+  vertical-align: Center !important;
+  color: #111827 !important;
+  background-color: white !important;
+}
+.accordion-button:active {
+  border-color: white !important;
+  border-style: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-item {
+  border-right: 1px solid white !important;
+  border-left: 1px solid white !important;
+}
+.Accordion-body {
+  font-family: "Inter" !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  align-items: left !important;
+  text-align: left;
+  color: rgba(60, 60, 67, 0.85);
+  padding: 2rem 3rem !important;
+}
