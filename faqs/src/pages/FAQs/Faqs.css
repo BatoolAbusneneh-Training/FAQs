@@ -1,24 +1,39 @@
-
+.faqspage {
+  text-align: center;
+}
 .frequently {
-  position: absolute;
+  /* position: absolute;
   width: 40%;
   height: 60px;
-  left: 400px;
+  left: 50%;
+  right: 50%;
   top: 100px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 60px;
+  box-align: center;
   text-align: center;
   align-items: center;
   letter-spacing: -0.025em;
   font-feature-settings: "liga" off;
-  color: #0f71ba;
+  color: #0f71ba; */
+  position: absolute;
+  width: 100%;
+  top: 120px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  color: #1566e9;
 }
 
-.faqspage{
+.faqspage {
   margin: auto;
+  margin-top: 15%;
 }
 .feelFree {
   position: absolute;
@@ -31,7 +46,6 @@
   line-height: 30px;
   color: #374151;
 }
-
 
 #frequently {
   display: none;
