@@ -1,27 +1,29 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import { data } from "./data";
 
 const NavBar = () => {
   return (
     <div className="navbar">
-      <img className="logo" src="./images/Twenteefore - Logo 2.png" />
+      {data.map((element, index) => {
+        return <div>
+          <Link id="li" to={element.path}>
+          {element.name}
+        </Link>
+        </div>;
+      })}    
+        <img className="logo" src="./images/Twenteefore - Logo 2.png" />
       <div id="navbar">
-        <Link className="homeLink" to="/">
-          Home
+
+      {data.map((ele, i) => {
+        return <div key={i}>
+          <Link className={ele.className} to={ele.path}>
+          {ele.name}
         </Link>
-        <Link className="orderLink" to="/">
-          Order
-        </Link>
-        <Link className="leaderboardsLink" to="/">
-          Leaderboards
-        </Link>
-        <Link className="marketplaceLink" to="/">
-          Marketplace
-        </Link>
-        <Link className="faqsLink" to="/faqs">
-          FAQs
-        </Link>
+        </div>;
+      })}
+
 
         <Link className="loginLink" to="/">
           <button id="loginLink">Log In</button>
