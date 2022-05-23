@@ -1,28 +1,51 @@
-.navBar-container {
-}
-.logout{
+.login {
   box-sizing: border-box;
- width: 112px;
- height: 38px;
- background: #F1BA19;
- border: 1px solid #000000;
- border-radius: 5px;
- text-align: center;
- float: right;
- /* margin-left: 10px;
- bottom:  11px;
- left: 92px;
- position: fixed; */
- }
-.Link{
+  width: 112px;
+  height: 38px;
+  background: #f1ba19;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  float: right;
+}
+.homeLink {
+  text-decoration: none;
+  font-family: "Inter";
+  color: black;
+  font-size: 1.1em;
+}
+.orderLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.1em;
+}
+.leaderboardsLink {
+  text-decoration: none;
+  font-family: Inter;
+  color: black;
+  font-size: 1.1em;
+}
+.marketplaceLink {
+  text-decoration: none;
+  font-family: "Inter";
+  color: black;
+  font-size: 1.1em;
+}
+.faqsLink {
+  text-decoration: none;
+  font-family: "Inter";
+  color: black;
+  font-size: 1.1em;
+}
+
+.Link {
   height: 17px;
- text-decoration: none;
- font-size: 14px;
- color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000000;
 }
-img{
-  /* width: 45vh; */
-}
+
 nav {
   background-color: var(--dark);
   color: var(--light);
@@ -30,7 +53,6 @@ nav {
 }
 .nav-container {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
   max-width: 1280px;
@@ -39,20 +61,17 @@ nav {
 }
 .nav-brand {
   font-size: 28px;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 300;
 }
 .menu {
   display: none;
   justify-content: flex-end;
-  padding-left: 100px;
+  /* padding-left: 100px; */
 }
 .menu a {
   padding: 8px 30px;
   text-decoration: none;
   color: var(--primary);
-  /* text-transform: uppercase; */
-  /* font-weight: 400; */
   border-radius: 90px;
 }
 .menu a:hover {
@@ -78,44 +97,28 @@ nav {
   transform-origin: 0 0;
   transition: 0.4s;
 }
-nav{
+nav {
   padding-top: 2% !important;
 }
-/* .hamburger:hover span:nth-child(2) {
-  transform: translateX(10px);
-  background-color:blue;
-}
-.active-hamburger span:nth-child(1) {
-  transform: translate(0px, -2px) rotate(44deg);
-}
-.active-hamburger span:nth-child(2) {
-  transform: translate(0px, -2px) rotate(44deg);
-  opacity: 0;
-}
-.active-hamburger span:nth-child(3) {
-  transform: translate(-2px, 5px) rotate(-44deg);
-} */
+
 .nav-dropdown {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
+  position: relative;
   height: 100%;
-  padding: 10px 0;
-  /* background-color: var(--primary); */
-  /* visibility: hidden; */
- 
-  /* position: absolute;
-  right: 0px;
-  top: 50px;
-  width: 200px; */
   z-index: 3;
   background-color: #ffffff;
   transition: 0.3s;
   box-sizing: border-box;
   box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-  padding: 31px 0 51px 25px;
-
+  padding: 11px 0 51px 15px;
+}
+#div {
+  position: fixed;
+  padding-left: 170px;
+  padding-top: 20px;
+  z-index: 4;
 }
 .nav-dropdown a {
   float: left;
@@ -123,7 +126,6 @@ nav{
   margin: 0 16px;
   text-decoration: none;
   color: var(--dark);
-  /* text-transform: uppercase; */
   font-weight: 500;
   border-radius: 90px;
 }
@@ -131,6 +133,7 @@ nav{
   color: var(--primary);
   background-color: var(--dark);
 }
+
 @media (min-width: 1050px) {
   .hamburger {
     display: none;
@@ -141,306 +144,179 @@ nav{
   .nav-dropdown {
     display: none;
   }
-}
-@media (max-width: 1050px) {
-  .logout{
-    margin-left: auto;
+  .login {
+    box-sizing: border-box;
+    width: 112px;
+    height: 38px;
+    background: #f1ba19;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    position: relative;
   }
-}
 
+  .Link {
+    height: 17px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  overflow: hidden;
-  background: black;
-  z-index: -1;
-}
-.loginLink {
-  text-decoration: none;
-  font-family: "Inter";
-  color: rgb(0, 0, 0);
-  font-size: 1.5em;
-  padding-right: 10px;
-  float: left;
-}
-#loginLink {
-  font-size: 0.7em;
-  font-family: "Inter";
-  padding: 5px 15px;
-  background-color: #f1ba19;
-  border: 1px solid #000000;
-  border-radius: 5px;
-margin-left: 100px;
-top: 0px;
-left: 40%;
-position: absolute;
-
-
-#main-menu {
-  display: block;
-  height: 100px;
-  width: 100%;
-  background: #3d0e61;
-  margin: 0px;
-  z-index: 9;
-}
-
-#main-menu ul {
-  max-width: 800px;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 9;
-}
-
-#main-menu li {
-  list-style-type: none;
-  font-size: 2rem;
-}
-
-#main-menu a {
-  color: #b9faf8;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-#main-menu a:hover {
-  text-decoration: underline;
-}
-
-#hamburger-input {
-  display: none;
-}
-
-#hamburger-menu {
-  position: absolute;
-  top: 1.5%;
-  left: 90%;
-  width: 5%;
-  height: 2%;
-  display: none;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  font-family: "Cabin", Sans-serif;
-  background: linear-gradient(
-    to bottom,
-    #000000,
-    #000000 20%,
-    white 20%,
-    white 40%,
-    #000000 40%,
-    #000000 60%,
-    white 60%,
-    white 80%,
-    #000000 80%,
-    #000000 100%
-  );
-}
-
-#hamburger-menu #sidebar-menu {
-  visibility: hidden;
- 
-  position: absolute;
-  right: 0px;
-  top: 50px;
-  width: 200px;
-  z-index: 3;
-  background-color: #ffffff;
-  transition: 0.3s;
-  box-sizing: border-box;
-  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-  padding: 31px 0 51px 25px;
-}
-
-#hamburger-menu h3 {
-  color: #000000;
-}
-
-#hamburger-menu ul {
-  padding-left: 0px;
-}
-
-#hamburger-menu li {
-  list-style-type: none;
-  line-height: 3rem;
-}
-
-#hamburger-menu a {
-  float: left;
-  display: inline;
-  color: #000000;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-#hamburger-menu a:hover {
-  text-decoration: underline;
-}
-
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-  visibility: visible;
-}
-
-
-@media screen and (max-width: 750px) {
-  #main-menu {
+  nav {
+    background-color: var(--dark);
+    color: var(--light);
+    border-bottom: 3px solid white;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .nav-brand {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  .menu {
     display: none;
+    justify-content: flex-end;
+    padding-left: 100px;
   }
-  #hamburger-menu {
-    display: inline;
+  .menu a {
+    padding: 8px 30px;
+    text-decoration: none;
+    color: black;
+    border-radius: 90px;
   }
-}
+  /* .menu a:hover {
+    color: black;
+    background-color: white;
+  } */
+  .hamburger {
+    display: block;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: black;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+  }
+  nav {
+    padding-top: 2% !important;
+  }
 
-.logo {
-  float: left;
-  padding-left: 30px;
-}
-.navbar {
-  padding: 10px;
-}
-#navbar {
-  padding-top: 10px;
-}
-.homeLink {
-  text-decoration: none;
-  font-family: Inter;
-  color: black;
-  font-size: 1.3em;
-  padding-right: 40px;
-  padding-left: 170px;
-}
-.orderLink {
-  text-decoration: none;
-  font-family: Inter;
-  color: black;
-  font-size: 1.3em;
-  padding-right: 40px;
-}
-.leaderboardsLink {
-  text-decoration: none;
-  font-family: Inter;
-  color: black;
-  font-size: 1.3em;
-  padding-right: 40px;
-}
-.marketplaceLink {
-  text-decoration: none;
-  font-family: "Inter";
-  color: black;
-  font-size: 1.3em;
-  padding-right: 40px;
-}
-.faqsLink {
-  text-decoration: none;
-  font-family: "Inter";
-  color: black;
-  font-size: 1.3em;
-}
-.loginLink {
-  text-decoration: none;
-  font-family: "Inter";
-  color: rgb(0, 0, 0);
-  font-size: 1.5em;
-  padding-right: 10px;
-  float: left;
-}
-#loginLink {
-  font-size: 0.7em;
-  font-family: "Inter";
-  padding: 5px 15px;
-  background-color: #f1ba19;
-  border: 1px solid #000000;
-  border-radius: 5px;
-margin-left: 100px;
-top: 15px;
-left: 80%;
-position: absolute;
-
-}
-@media all and (max-width: 600px) {
-  .logo {
+  .nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100%;
+    z-index: 3;
+    background-color: #ffffff;
+    transition: 0.3s;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    padding: 11px 0 51px 15px;
+  }
+  #div {
+    position: fixed;
+    padding-left: 170px;
+    padding-top: 20px;
+    z-index: 4;
+  }
+  .nav-dropdown a {
     float: left;
-    padding: 10px;
-    width: 40%;
+    padding: 8px 16px;
+    margin: 0 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-radius: 90px;
   }
-  #navox-shadowar {
-    visibility: hidden;
-    transform: translate(0em, -1em);
+  .nav-dropdown a:hover {
+    color: var(--primary);
+    background-color: var(--dark);
   }
-  .navbar {
-    padding: 0px;
+
+  @media (min-width: 1050px) {
+    .hamburger {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+
+    .nav-dropdown {
+      display: none;
+    }
+
+    .homeLink {
+      text-decoration: none;
+      font-family: "Inter";
+      color: black;
+      font-size: 1.1em;
+      position: absolute;
+      left: 560px;
+      top: 30px;
+    }
+    .orderLink {
+      text-decoration: none;
+      font-family: Inter;
+      color: black;
+      font-size: 1.1em;
+      position: absolute;
+      left: 650px;
+      top: 30px;
+    }
+    .leaderboardsLink {
+      position: absolute;
+      left: 750px;
+      top: 30px;
+
+      text-decoration: none;
+      font-family: Inter;
+      color: black;
+      font-size: 1.1em;
+    }
+    .marketplaceLink {
+      text-decoration: none;
+      font-family: "Inter";
+      color: black;
+      font-size: 1.1em;
+      position: absolute;
+      left: 900px;
+      top: 30px;
+    }
+    .faqsLink {
+      top: 30px;
+      text-decoration: none;
+      font-family: "Inter";
+      color: black;
+      font-size: 1.1em;
+      position: absolute;
+      left: 1050px;
+    }
   }
-  .homeLink {
-    font-size: 0.7em;
-    padding-right: 20px;
-    padding-left: 180px;
+}
+@media (max-width: 750px) {
+  #img {
+    width: 160px;
+    height: 40px;
   }
-  .orderLink {
-    font-size: 0.7em;
-    padding-right: 20px;
+  .login {
+    width: 4em;
+    margin-left: 40px;
   }
-  .leaderboardsLink {
-    font-size: 0.7em;
-    padding-right: 20px;
-  }
-  .marketplaceLink {
-    font-size: 0.7em;
-    padding-right: 20px;
-  }
-  .faqsLink {
-    font-size: 0.7em;
-  }
-  .loginLink {
-    font-size: 0.7em;
-    padding-right: 20px;
-  }
-  #loginLink {
-    font-size: 0.9em;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-} */
+}
