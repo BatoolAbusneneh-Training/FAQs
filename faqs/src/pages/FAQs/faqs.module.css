@@ -44,12 +44,13 @@
     text-align: center;
     align-items: center;
     transform: translate(45%, -1.5em);
-  }.faqspage {
+  }
+  .faqspage {
     margin: auto;
     margin-top: 15%;
   }
   .feelFree {
-      top: 18% !important;
-position: relative;
+    top: 18% !important;
+    position: relative;
   }
 }
