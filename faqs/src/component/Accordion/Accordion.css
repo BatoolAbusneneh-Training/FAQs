@@ -6,6 +6,10 @@
   transform: rotate(45deg) !important ;
   background-color: white !important;
 }
+.accordion-body {
+  color: grey;
+  width: auto;
+}
 .accordion {
   border: 0px !important;
   width: 90% !important;
