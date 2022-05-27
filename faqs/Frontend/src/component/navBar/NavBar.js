@@ -30,8 +30,17 @@ const NavBar = () => {
             alt="logo"
             src="./images/Twenteefore - Logo 2.png"
           />
-          <div className="menu">{menu}</div>
-          <button className="login">LogIn</button>
+          <div id="menu" className="menu">
+            {menu}
+          </div>
+          <button className="login" id="loginn">
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/login"
+            >
+              LogIn
+            </Link>
+          </button>
           <button
             className={active ? "hamburger active-hamburger" : "hamburger"}
             onClick={() => setActive(!active)}

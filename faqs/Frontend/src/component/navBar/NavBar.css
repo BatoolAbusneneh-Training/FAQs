@@ -1,3 +1,7 @@
+#div {
+  float: right;
+  right: 0;
+}
 .login {
   box-sizing: border-box;
   width: 112px;
@@ -119,12 +123,12 @@ nav {
 
 #div {
   position: fixed;
-  padding-left: 170px;
+  /* padding-left: 170px; */
   padding-top: 20px;
   z-index: 4;
   visibility: inherit;
-  float: right;
-  right: 30%;
+  /* float: right; */
+  /* right: 30%; */
 }
 .nav-dropdown a {
   float: left;
@@ -260,7 +264,30 @@ nav {
     color: var(--primary);
     background-color: var(--dark);
   }
-
+  @media (max-width: 746px), (min-width: 400px) {
+    #loginn {
+      /* margin-right: 200px;
+      float: right; */
+    }
+  }
+  @media (max-width: 1274px) {
+    .faqsLink {
+      /* position: absolute; */
+      margin-left: -200px;
+    }
+    .homeLink {
+      margin-left: -200px;
+    }
+    .leaderboardsLink {
+      margin-left: -200px;
+    }
+    .marketplaceLink {
+      margin-left: -200px;
+    }
+    .orderLink {
+      margin-left: -200px;
+    }
+  }
   @media (min-width: 1050px) {
     .hamburger {
       display: none;
