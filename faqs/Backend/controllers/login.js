@@ -5,7 +5,6 @@ const jwt = require("jsonwebtoken");
 const login = (req, res) => {
   const email = req.body.email.toLowerCase();
   const password = req.body.passworrd;
-  let newPassword = password;
 
   const query = `SELECT * FROM roles INNER JOIN users ON users.role_id=roles.id WHERE email=? `;
   const data = [email];
@@ -27,8 +26,7 @@ const login = (req, res) => {
         message: `The email doesn't exist`,
       });
     }
-    console.log("ffff");
-    const valid = await bcrypt.compare(newPassword, result[0].passworrd);
+    const valid = await bcrypt.compare(password, result[0].passworrd);
     if (!valid) {
       return res.status(403).json({
         success: false,
