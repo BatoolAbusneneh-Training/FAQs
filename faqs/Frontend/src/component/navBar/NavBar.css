@@ -264,15 +264,8 @@ nav {
     color: var(--primary);
     background-color: var(--dark);
   }
-  @media (max-width: 746px), (min-width: 400px) {
-    #loginn {
-      /* margin-right: 200px;
-      float: right; */
-    }
-  }
   @media (max-width: 1274px) {
     .faqsLink {
-      /* position: absolute; */
       margin-left: -200px;
     }
     .homeLink {

@@ -2,10 +2,24 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { data } from "./data";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from "../../reducer/login";
+import { useNavigate } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ userId, setUserId }) => {
   const [active, setActive] = useState(false);
-
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const state = useSelector((state) => {
+    return { isLoggedIn: state.loginReducer.isLoggedIn };
+  });
+  const logout = () => {
+    state.isLoggedIn = false;
+    localStorage.removeItem("token");
+    dispatch(logoutUser());
+    navigate(`/faqs`);
+    setUserId("");
+  };
   const menu = (
     <>
       {data.map((element, index) => {
@@ -33,14 +47,25 @@ const NavBar = () => {
           <div id="menu" className="menu">
             {menu}
           </div>
-          <button className="login" id="loginn">
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/login"
-            >
-              LogIn
-            </Link>
-          </button>
+          {state.isLoggedIn || userId ? (
+            <button className="login" id="loginn" onClick={logout}>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to={logout}
+              >
+                Logout
+              </Link>
+            </button>
+          ) : (
+            <button className="login" id="loginn">
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/login"
+              >
+                LogIn
+              </Link>
+            </button>
+          )}{" "}
           <button
             className={active ? "hamburger active-hamburger" : "hamburger"}
             onClick={() => setActive(!active)}
