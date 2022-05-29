@@ -40,118 +40,69 @@ const Users = () => {
   };
 
   return (
-    <div className="registerPage">     <h2  className="text-center">Create Account</h2>
-
-      {/* <div class="form-floating mb-3">
+    <div className="registerPage">
+      {" "}
+      <h2 className="text-center">Create Account</h2>
+      <div className="mb-3">
         <input
-          type="email"
+          type="text"
           className="form-control"
+          id="formGroupExampleInput"
           onChange={(e) => {
             setFirstName(e.target.value);
           }}
-          id="floatingInput"
-          placeholder="Email"
+          placeholder="FirstName"
         />
-        <label htmlFor="floatingInput">FirstName</label>
-      </div> */}
-      {/* <div className="form-floating">
+      </div>{" "}
+      <br />
+      <div className="mb-3">
         <input
+          type="text"
+          className="form-control"
+          id="formGroupExampleInput"
           onChange={(e) => {
             setLastName(e.target.value);
           }}
+          placeholder="LastName"
+        />
+      </div>
+      {/* //////////////// */}
+      <br />
+      <div className="mb-3">
+        <input
           type="text"
           className="form-control"
-          id="floatingPassword"
-          placeholder="Password"
-        />
-        <label htmlFor="floatingPassword">LastName</label>
-      </div>{" "} */}
-      {/* <br />
-      <div class="form-floating">
-        <input
+          id="formGroupExampleInput"
           onChange={(e) => {
             setCountry(e.target.value);
           }}
-          type="text"
-          className="form-control"
-          id="floatingPassword"
-          placeholder="Password"
+          placeholder="Country"
         />
-        <label htmlFor="floatingPassword">Country</label>
-      </div> */}
-      {/* <br />
-      <div className="form-floating">
+      </div>{" "}
+      <br />
+      <div class="mb-3">
         <input
+          type="email"
+          className="form-control"
+          id="formGroupExampleInput"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
-          type="email"
+          placeholder="Email"
+        />
+      </div>{" "}
+      <br />{" "}
+      <div class="mb-3">
+        <input
+          type="password"
           className="form-control"
-          id="floatingPassword"
+          id="formGroupExampleInput"
+          onChange={(e) => {
+            setPassworrd(e.target.value);
+          }}
           placeholder="Password"
         />
-        <label htmlFor="floatingPassword">Email</label>
       </div>{" "}
-      <br /> */}
-    
-        {/* /////////// */}
-        <div className="mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="formGroupExampleInput"
-            onChange={(e) => {
-              setFirstName(e.target.value);
-            }}
-            placeholder="FirstName"
-          />
-        </div>{" "}
-        <br />
-        <div className="mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="formGroupExampleInput"
-            onChange={(e) => {
-              setLastName(e.target.value);
-            }}
-            placeholder="LastName"
-          />
-        </div>
-        {/* //////////////// */}
-        <br />
-        <div className="mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="formGroupExampleInput"
-            onChange={(e) => {
-              setCountry(e.target.value);
-            }}
-            placeholder="Country"
-          />
-        </div>{" "}
-        <br />
-        <div class="mb-3">
-          <input
-            type="email"
-            className="form-control"
-            id="formGroupExampleInput"
-            onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              placeholder="Email"          />
-        </div>  <br /> <div class="mb-3">
-          <input
-            type="password"
-            className="form-control"
-            id="formGroupExampleInput"
-            onChange={(e) => {
-                setPassworrd(e.target.value);
-              }}
-              placeholder="Password"          />
-        </div>{" "}
-       
       <br />
       <div class="d-grid gap-2 col-6 mx-auto">
         <button
