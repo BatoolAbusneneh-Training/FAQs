@@ -1,4 +1,4 @@
-import "./Login.css";
+import "./login.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../../reducer/login";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 const Login = () => {
   const state = useSelector((state) => {
     return {
@@ -37,30 +36,7 @@ const Login = () => {
   return (
     <form className="form">
       <h2 className="text-left">Login</h2>
-      {/* <div className="form-check form-check-inline">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          id="inlineCheckbox1"
-          value="option1"
-        />
-        <label className="form-check-label" htmlFor="inlineCheckbox1">
-          Corporate
-        </label>
-      </div>
-      <div className="form-check form-check-inline">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          id="inlineCheckbox2"
-          value="option2"
-        />
-        <label className="form-check-label" htmlFor="inlineCheckbox2">
-          Player
-        </label>
-      </div> */}
-     
-   
+  
       <div className="form-floating mb-3">
         <input
           type="email"
