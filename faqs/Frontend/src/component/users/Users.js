@@ -59,20 +59,17 @@ const Users = () => {
         <input
           type="text"
           className="form-control"
-          id="formGroupExampleInput"
           onChange={(e) => {
             setLastName(e.target.value);
           }}
           placeholder="LastName"
         />
       </div>
-      {/* //////////////// */}
       <br />
       <div className="mb-3">
         <input
           type="text"
           className="form-control"
-          id="formGroupExampleInput"
           onChange={(e) => {
             setCountry(e.target.value);
           }}
@@ -80,11 +77,10 @@ const Users = () => {
         />
       </div>{" "}
       <br />
-      <div class="mb-3">
+      <div className="mb-3">
         <input
           type="email"
           className="form-control"
-          id="formGroupExampleInput"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
@@ -92,11 +88,10 @@ const Users = () => {
         />
       </div>{" "}
       <br />{" "}
-      <div class="mb-3">
+      <div className="mb-3">
         <input
           type="password"
           className="form-control"
-          id="formGroupExampleInput"
           onChange={(e) => {
             setPassworrd(e.target.value);
           }}
@@ -104,7 +99,7 @@ const Users = () => {
         />
       </div>{" "}
       <br />
-      <div class="d-grid gap-2 col-6 mx-auto">
+      <div className="d-grid gap-2 col-6 mx-auto">
         <button
           className="btn btn-warning"
           type="button"
